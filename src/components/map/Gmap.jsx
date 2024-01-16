@@ -1,32 +1,42 @@
-import { Fragment } from "react";
-import {
-  GoogleMap,
-  useJsApiLoader,
-  useLoadScript,
-} from "@react-google-maps/api";
+import React from "react";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
-export const Gmap = () => {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: import.meta.VITE_APP_API_KEY,
+const libraries = ["places"];
+const mapContainerStyle = {
+  width: "99vw",
+  height: "50vh",
+};
+
+const center = {
+  lat: 41.835735, // default latitude
+  lng: -87.7680962, // default longitude
+};
+
+const App = () => {
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey: "AIzaSyDLp8ci_euVH8gtQeXjT0dSjhZqd9QAqx0",
+    libraries,
   });
+
+  if (loadError) {
+    return <div>Error loading maps</div>;
+  }
+
+  if (!isLoaded) {
+    return <div>Loading maps</div>;
+  }
+
   return (
-    <Fragment>
-      <div style={{ width: "100%", height: "50vh" }}>
-        {isLoaded ? (
-          <GoogleMap
-            center={{
-              lat: 40.3947365,
-              lng: 49.6898045,
-            }}
-            zoom={10}
-            mapContainerStyle={{ width: "100%", height: "50vh" }}
-          >
-            {/* {markerks here} */}
-          </GoogleMap>
-        ) : null}
-      </div>
-    </Fragment>
+    <div>
+      <GoogleMap
+        mapContainerStyle={mapContainerStyle}
+        zoom={17}
+        center={center}
+      >
+        <Marker position={center} />
+      </GoogleMap>
+    </div>
   );
 };
 
-export default Gmap;
+export default App;
