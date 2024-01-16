@@ -29,7 +29,10 @@ function App() {
         <header className="header">
           <img src={headerLogo} alt="" />
           <div className="links">
-            <Link to="/vite-deploy/" className={isActive("/") ? "active" : ""}>
+            <Link
+              to="/Bruin-Logistics-beta/"
+              className={isActive("/") ? "active" : ""}
+            >
               Home
             </Link>
             <Link to="/about-us">About Us</Link>
