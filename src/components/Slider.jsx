@@ -1,5 +1,5 @@
 import React from "react";
-import "./Slider.css";
+import "./Sllider.css";
 import "react-slideshow-image/dist/styles.css";
 import { Fade, Zoom, Slide } from "react-slideshow-image";
 import leftArrow from "../assets/images/left-arrow.svg";
