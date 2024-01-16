@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.registration-header-container {
+  background: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.registration-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    padding-right: 68px;
+    height: 98px;
+    width: 250px;
+    object-fit: cover;
+  }
+}
+
+.registration-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  a:hover {
+    color: #008afc;
+  }
+}
+
+.registration-links a.active {
+  color: #008afc;
+}
+
+.registration-introduction {
+  padding-top: 35px;
+}
+
+.registration-intro-container {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.registration-intro-container img {
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.registration-intro-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.rectangle-position {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.rectangle-carrier-registration {
+  align-items: center;
+  background-color: rgba(0, 138, 252, 0.7);
+  display: flex;
+  height: 300px;
+  width: 340px;
+  justify-content: center;
+  transform: skew(-21deg);
+
+  p {
+    position: relative;
+    z-index: 3;
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    transform: skew(21deg);
+  }
+}
+
+.carrier-registration-content {
+  background: #fff;
+  display: flex;
+  gap: 75px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+
+.carrier-registration-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+
+  P {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  span {
+    font-size: 19px;
+    text-align: center;
+    line-height: 30px;
+    width: 315px;
+  }
+
+  button {
+    background-color: #fff;
+    border: 3px #008afc solid;
+    color: #008afc;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 5px;
+    width: 142px;
+    padding: 10px;
+  }
+
+  button:hover {
+    background-color: #008afc;
+    color: #fff;
+    border: 3px #008afc solid;
+  }
+}
+
+.img-container-about-registration {
+  border: 8px rgba(255, 255, 255, 0.6) solid;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+  height: 288px;
+  width: 434px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer-registration {
+  align-items: center;
+  background-color: #008afc;
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  width: 100%;
+
+  span {
+    font-size: 14px;
+    color: #fff;
+  }
+}

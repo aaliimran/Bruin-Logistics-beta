@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/aboutUs/AboutUs.jsx";
+import Services from "./components/services/Services.jsx";
+import CarrierRegistration from "./components/carrierRegistration/CarrierRegistration.jsx";
 
 // import Services from "./components/services/Services.jsx";
 // import CarrierRegistration from "./components/carrierRegistration/CarrierRegistration.jsx";
@@ -15,10 +17,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/Bruin-Logistics-beta/" element={<App />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        {/* <Route path="/services" element={<Services />} />
-        <Route path="/carrier-registration" element={<CarrierRegistration />} />
-        <Route path="/contact-us" element={<ContactUs />} /> */}
+        <Route path="/Bruin-Logistics-beta/about-us" element={<AboutUs />} />
+        <Route path="/Bruin-Logistics-beta/services" element={<Services />} />
+        <Route
+          path="/Bruin-Logistics-beta/carrier-registration"
+          element={<CarrierRegistration />}
+        />
+        {/* <Route path="/Bruin-Logistics-beta/contact-us" element={<ContactUs />} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

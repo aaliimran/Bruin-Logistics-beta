@@ -31,20 +31,22 @@ function App() {
           <div className="links">
             <Link
               to="/Bruin-Logistics-beta/"
-              className={isActive("/") ? "active" : ""}
+              className={isActive("/Bruin-Logistics-beta/") ? "active" : ""}
             >
               Home
             </Link>
-            <Link to="/about-us">About Us</Link>
-            <Link to="/services">Services</Link>
+            <Link to="/Bruin-Logistics-beta/about-us">About Us</Link>
+            <Link to="/Bruin-Logistics-beta/services">Services</Link>
             <a
               href="https://tracking.magaya.com/?orgname=36187#livetrack"
               target="_blank"
             >
               Live Track
             </a>
-            <Link to="/carrier-registration">Carrier Registration</Link>
-            <Link to="/contact-us">Contact Us</Link>
+            <Link to="/Bruin-Logistics-beta/carrier-registration">
+              Carrier Registration
+            </Link>
+            <Link to="/Bruin-Logistics-beta/contact-us">Contact Us</Link>
           </div>
         </header>
       </div>
