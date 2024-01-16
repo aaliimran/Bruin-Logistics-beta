@@ -164,9 +164,10 @@ header {
 }
 
 .footer {
-  background-image: url("C:\Users\AaliI\bruin-logistics\src\assets\images\backround.jpg");
+  background-image: url("C:\Users\AaliI\vite-poject\src\assets\backround.jpg");
   display: flex;
   justify-content: center;
+  height: 100%;
   position: absolute;
   width: 100%;
 }
@@ -174,7 +175,6 @@ header {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   p {
     font-family: "Poppins";
@@ -206,6 +206,7 @@ header {
   display: flex;
   gap: 8px;
   padding-top: 40px;
+  padding-top: 20px;
 }
 
 .links a.active {

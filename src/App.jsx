@@ -131,19 +131,28 @@ function App() {
             </div>
           </div>
           <div className="icons">
-            <a href="#">
+            <a
+              href="https://www.facebook.com/Bruin-Logistics-LLC-733277920373379/"
+              target="_blank"
+            >
               <img src={facebook} alt="" />
             </a>
-            <a href="#">
+            <a href="https://twitter.com/LlcBruin" target="_blank">
               <img src={twitter} alt="" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/bruinlogisticsllc/"
+              target="_blank"
+            >
               <img src={insta} alt="" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/bruin-logistics-269959175/"
+              target="_blank"
+            >
               <img src={linkedIn} alt="" />
             </a>
-            <a href="#">
+            <a href="#" target="_blank">
               <img src={google} alt="" />
             </a>
           </div>
@@ -157,17 +166,3 @@ function App() {
 }
 
 export default App;
-
-// import React from "react";
-
-// const App = () => {
-//   return (
-//     <div>
-//       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda quod
-//       voluptates eos amet, reprehenderit neque non quis blanditiis ad ipsam,
-//       labore unde fugit magni esse laboriosam accusantium possimus rem et.
-//     </div>
-//   );
-// };
-
-// export default App;
