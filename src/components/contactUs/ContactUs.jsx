@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./ContactUS.css";
+import "./ContactUs.css";
 import headerLogo from "../../assets/images/header-logo.jpg";
 import contactUsImg from "../../assets/images/contactUs-img.png";
 import linkedIn from "../../assets/images/linkedIn.jpg";
