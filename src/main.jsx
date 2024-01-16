@@ -6,14 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/aboutUs/AboutUs.jsx";
 import Services from "./components/services/Services.jsx";
 import CarrierRegistration from "./components/carrierRegistration/CarrierRegistration.jsx";
-
-// import Services from "./components/services/Services.jsx";
-// import CarrierRegistration from "./components/carrierRegistration/CarrierRegistration.jsx";
-// import ContactUs from "./components/contactUs/ContactUs.jsx";
+import ContactUs from "./components/contactUs/ContactUs.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <App /> */}
     <BrowserRouter>
       <Routes>
         <Route path="/Bruin-Logistics-beta/" element={<App />} />
@@ -23,7 +19,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           path="/Bruin-Logistics-beta/carrier-registration"
           element={<CarrierRegistration />}
         />
-        {/* <Route path="/Bruin-Logistics-beta/contact-us" element={<ContactUs />} /> */}
+        <Route
+          path="/Bruin-Logistics-beta/contact-us"
+          element={<ContactUs />}
+        />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
