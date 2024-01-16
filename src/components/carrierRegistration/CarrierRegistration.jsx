@@ -17,9 +17,9 @@ const CarrierRegistration = () => {
         <header className="registration-header">
           <img src={headerLogo} alt="" />
           <div className="registration-links">
-            <Link to="/Bruin-Logistics-beta/">Home</Link>
-            <Link to="/Bruin-Logistics-beta/about-us">About Us</Link>
-            <Link to="/Bruin-Logistics-beta/services">Services</Link>
+            <Link to="/">Home</Link>
+            <Link to="/about-us">About Us</Link>
+            <Link to="/services">Services</Link>
             <a
               href="https://tracking.magaya.com/?orgname=36187#livetrack"
               target="_blank"
@@ -27,16 +27,12 @@ const CarrierRegistration = () => {
               Live Track
             </a>
             <Link
-              to="/Bruin-Logistics-beta/carrier-registration"
-              className={
-                isActive("/Bruin-Logistics-beta/carrier-registration")
-                  ? "active"
-                  : ""
-              }
+              to="/carrier-registration"
+              className={isActive("/carrier-registration") ? "active" : ""}
             >
               Carrier Registration
             </Link>
-            <Link to="/Bruin-Logistics-beta/contact-us">Contact Us</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </div>
         </header>
       </div>

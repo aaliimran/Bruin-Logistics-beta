@@ -12,17 +12,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/Bruin-Logistics-beta/" element={<App />} />
-        <Route path="/Bruin-Logistics-beta/about-us" element={<AboutUs />} />
-        <Route path="/Bruin-Logistics-beta/services" element={<Services />} />
-        <Route
-          path="/Bruin-Logistics-beta/carrier-registration"
-          element={<CarrierRegistration />}
-        />
-        <Route
-          path="/Bruin-Logistics-beta/contact-us"
-          element={<ContactUs />}
-        />
+        <Route path="/" element={<App />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/carrier-registration" element={<CarrierRegistration />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

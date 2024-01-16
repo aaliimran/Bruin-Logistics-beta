@@ -23,13 +23,11 @@ const Services = () => {
         <header className="services-header">
           <img src={headerLogo} alt="" />
           <div className="links-services">
-            <Link to="/Bruin-Logistics-beta/">Home</Link>
-            <Link to="/Bruin-Logistics-beta/about-us">About Us</Link>
+            <Link to="/">Home</Link>
+            <Link to="/about-us">About Us</Link>
             <Link
-              to="/Bruin-Logistics-beta/services"
-              className={
-                isActive("/Bruin-Logistics-beta/services") ? "active" : ""
-              }
+              to="/services"
+              className={isActive("/services") ? "active" : ""}
             >
               Services
             </Link>
@@ -39,10 +37,8 @@ const Services = () => {
             >
               Live Track
             </a>
-            <Link to="/Bruin-Logistics-beta/carrier-registration">
-              Carrier Registration
-            </Link>
-            <Link to="/Bruin-Logistics-beta/contact-us">Contact Us</Link>
+            <Link to="/carrier-registration">Carrier Registration</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </div>
         </header>
       </div>

@@ -29,24 +29,19 @@ function App() {
         <header className="header">
           <img src={headerLogo} alt="" />
           <div className="links">
-            <Link
-              to="/Bruin-Logistics-beta/"
-              className={isActive("/Bruin-Logistics-beta/") ? "active" : ""}
-            >
+            <Link to="/" className={isActive("/") ? "active" : ""}>
               Home
             </Link>
-            <Link to="/Bruin-Logistics-beta/about-us">About Us</Link>
-            <Link to="/Bruin-Logistics-beta/services">Services</Link>
+            <Link to="/about-us">About Us</Link>
+            <Link to="/services">Services</Link>
             <a
               href="https://tracking.magaya.com/?orgname=36187#livetrack"
               target="_blank"
             >
               Live Track
             </a>
-            <Link to="/Bruin-Logistics-beta/carrier-registration">
-              Carrier Registration
-            </Link>
-            <Link to="/Bruin-Logistics-beta/contact-us">Contact Us</Link>
+            <Link to="/carrier-registration">Carrier Registration</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </div>
         </header>
       </div>

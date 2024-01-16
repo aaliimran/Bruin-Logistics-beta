@@ -17,26 +17,22 @@ const AboutUs = () => {
         <header className="aboutUs-header">
           <img src={headerLogo} alt="" />
           <div className="aboutUs-links">
-            <Link to="/Bruin-Logistics-beta/">Home</Link>
+            <Link to="/">Home</Link>
             <Link
-              to="/Bruin-Logistics-beta/about-us"
-              className={
-                isActive("/Bruin-Logistics-beta/about-us") ? "active" : ""
-              }
+              to="/about-us"
+              className={isActive("/about-us") ? "active" : ""}
             >
               About Us
             </Link>
-            <Link to="/Bruin-Logistics-beta/services">Services</Link>
+            <Link to="/services">Services</Link>
             <a
               href="https://tracking.magaya.com/?orgname=36187#livetrack"
               target="_blank"
             >
               Live Track
             </a>
-            <Link to="/Bruin-Logistics-beta/carrier-registration">
-              Carrier Registration
-            </Link>
-            <Link to="/Bruin-Logistics-beta/contact-us">Contact Us</Link>
+            <Link to="/carrier-registration">Carrier Registration</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </div>
         </header>
       </div>

@@ -26,23 +26,19 @@ const ContactUs = () => {
         <header className="contactUs-header">
           <img src={headerLogo} alt="" />
           <div className="contactUs-links">
-            <Link to="/Bruin-Logistics-beta/">Home</Link>
-            <Link to="/Bruin-Logistics-beta/about-us">About Us</Link>
-            <Link to="/Bruin-Logistics-beta/services">Services</Link>
+            <Link to="/">Home</Link>
+            <Link to="/about-us">About Us</Link>
+            <Link to="/services">Services</Link>
             <a
               href="https://tracking.magaya.com/?orgname=36187#livetrack"
               target="_blank"
             >
               Live Track
             </a>
-            <Link to="/Bruin-Logistics-beta/carrier-registration">
-              Carrier Registration
-            </Link>
+            <Link to="/carrier-registration">Carrier Registration</Link>
             <Link
-              to="/Bruin-Logistics-beta/contact-us"
-              className={
-                isActive("/Bruin-Logistics-beta/contact-us") ? "active" : ""
-              }
+              to="/contact-us"
+              className={isActive("/contact-us") ? "active" : ""}
             >
               Contact Us
             </Link>
