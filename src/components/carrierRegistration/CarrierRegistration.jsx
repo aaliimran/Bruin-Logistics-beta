@@ -60,7 +60,7 @@ const CarrierRegistration = () => {
             href="https://customers.xpresstrax.com/PGCommon/Registration.aspx?id=dj0JbxJjrgY%3d&ltr=6zcOsHDiKmw%3d"
             target="_blank"
           >
-            <button>Registrationn</button>
+            <button>Registration</button>
           </a>
         </div>
         <div>
