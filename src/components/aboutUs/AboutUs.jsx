@@ -40,7 +40,7 @@ const AboutUs = () => {
         <div className="aboutUs-intro-container">
           <img src={aboutUsIntroImg} alt="" />
           <div className="rectangle-position">
-            <div className="rectangle">
+            <div className="rectangle-aboutUs">
               <p>About Us</p>
             </div>
           </div>
